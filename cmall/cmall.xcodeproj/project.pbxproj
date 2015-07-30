@@ -10,9 +10,7 @@
 		633707E31B6A49F40094A36C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633707E21B6A49F40094A36C /* main.m */; };
 		633707E61B6A49F40094A36C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633707E51B6A49F40094A36C /* AppDelegate.m */; };
 		633707E91B6A49F40094A36C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633707E81B6A49F40094A36C /* ViewController.m */; };
-		633707EC1B6A49F40094A36C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633707EA1B6A49F40094A36C /* Main.storyboard */; };
 		633707EE1B6A49F40094A36C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633707ED1B6A49F40094A36C /* Images.xcassets */; };
-		633707F11B6A49F40094A36C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633707EF1B6A49F40094A36C /* LaunchScreen.xib */; };
 		633707FD1B6A49F50094A36C /* cmallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633707FC1B6A49F50094A36C /* cmallTests.m */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +32,7 @@
 		633707E51B6A49F40094A36C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		633707E71B6A49F40094A36C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		633707E81B6A49F40094A36C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		633707EB1B6A49F40094A36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		633707ED1B6A49F40094A36C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		633707F01B6A49F40094A36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		633707F61B6A49F40094A36C /* cmallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cmallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		633707FB1B6A49F40094A36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633707FC1B6A49F50094A36C /* cmallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cmallTests.m; sourceTree = "<group>"; };
@@ -85,9 +81,7 @@
 				633707E51B6A49F40094A36C /* AppDelegate.m */,
 				633707E71B6A49F40094A36C /* ViewController.h */,
 				633707E81B6A49F40094A36C /* ViewController.m */,
-				633707EA1B6A49F40094A36C /* Main.storyboard */,
 				633707ED1B6A49F40094A36C /* Images.xcassets */,
-				633707EF1B6A49F40094A36C /* LaunchScreen.xib */,
 				633707E01B6A49F40094A36C /* Supporting Files */,
 			);
 			path = cmall;
@@ -199,8 +193,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633707EC1B6A49F40094A36C /* Main.storyboard in Resources */,
-				633707F11B6A49F40094A36C /* LaunchScreen.xib in Resources */,
 				633707EE1B6A49F40094A36C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +234,6 @@
 			targetProxy = 633707F71B6A49F40094A36C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		633707EA1B6A49F40094A36C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				633707EB1B6A49F40094A36C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		633707EF1B6A49F40094A36C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				633707F01B6A49F40094A36C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		633707FE1B6A49F50094A36C /* Debug */ = {
@@ -416,6 +389,7 @@
 				633708021B6A49F50094A36C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		633708031B6A49F50094A36C /* Build configuration list for PBXNativeTarget "cmallTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +398,7 @@
 				633708051B6A49F50094A36C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
