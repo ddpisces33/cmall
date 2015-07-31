@@ -77,6 +77,7 @@
 		633707DF1B6A49F40094A36C /* cmall */ = {
 			isa = PBXGroup;
 			children = (
+				638AA7D51B6A53D60043F853 /* BaseController */,
 				633707E41B6A49F40094A36C /* AppDelegate.h */,
 				633707E51B6A49F40094A36C /* AppDelegate.m */,
 				633707E71B6A49F40094A36C /* ViewController.h */,
@@ -111,6 +112,13 @@
 				633707FB1B6A49F40094A36C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		638AA7D51B6A53D60043F853 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

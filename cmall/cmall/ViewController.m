@@ -2,7 +2,7 @@
 //  ViewController.m
 //  cmall
 //
-//  Created by 杜澎 on 15/7/30.
+//  Created by NAONAO on 15/7/30.
 //  Copyright (c) 2015年 Picnic. All rights reserved.
 //
 
