@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "NNHomeTabController.h"
+#import "NNBaseViewController.h"
+#import "NNBaseNavigationController.h"
 
 @interface AppDelegate ()
+
+@property (strong,nonatomic) NNBaseNavigationController *navigationController;
 
 @end
 
@@ -16,7 +21,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIViewController *rootViewController;
+    
+    rootViewController = [[NNHomeTabController alloc] init];
+    
+    self.navigationController = [[NNBaseNavigationController alloc] initWithRootViewController:rootViewController];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = _navigationController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
