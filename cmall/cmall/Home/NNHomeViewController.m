@@ -14,19 +14,22 @@
 
 @implementation NNHomeViewController
 
+- (instancetype)init {
+    self = [super init];
+    
+    if(self) {
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil
+                                                        image:[UIImage imageNamed:@"user_normal"]
+                                                selectedImage:[UIImage imageNamed:@"user_pressed"]];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImage *image = [UIImage imageNamed:@"icon_02"];
-    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    UIImage *image2 = [UIImage imageNamed:@"icon_02C"];
-    image2 = [image2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    UITabBarItem *barItem = [[UITabBarItem alloc] initWithTitle:@"" image:image selectedImage:image2];
-    barItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
-    self.tabBarItem = barItem;
-    self.view.backgroundColor = [UIColor redColor];
+//    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {

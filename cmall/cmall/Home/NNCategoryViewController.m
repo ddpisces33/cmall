@@ -14,6 +14,18 @@
 
 @implementation NNCategoryViewController
 
+- (instancetype)init {
+    self = [super init];
+    
+    if(self) {
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:nil
+                                                        image:[UIImage imageNamed:@"camera_normal"]
+                                                selectedImage:[UIImage imageNamed:@"camera_pressed"]];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341AF0C7E00FD0EEE5045D7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D87CBC0042796D3D44B799B4 /* libPods.a */; };
 		633707E31B6A49F40094A36C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633707E21B6A49F40094A36C /* main.m */; };
 		633707E61B6A49F40094A36C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633707E51B6A49F40094A36C /* AppDelegate.m */; };
 		633707EE1B6A49F40094A36C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633707ED1B6A49F40094A36C /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F5A99351C4956CD0D74D14E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		633707DD1B6A49F40094A36C /* cmall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cmall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633707E11B6A49F40094A36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633707E21B6A49F40094A36C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		636A10C91B6B6D8600D3E7CB /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		63BF5B4E1B6B20AF00C5A7B2 /* NNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNBaseViewController.h; path = BaseController/NNBaseViewController.h; sourceTree = "<group>"; };
 		63BF5B4F1B6B20AF00C5A7B2 /* NNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNBaseViewController.m; path = BaseController/NNBaseViewController.m; sourceTree = "<group>"; };
+		D87CBC0042796D3D44B799B4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7740C57FCE1BE42D9DB4B67 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341AF0C7E00FD0EEE5045D7B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,8 @@
 				633707DF1B6A49F40094A36C /* cmall */,
 				633707F91B6A49F40094A36C /* cmallTests */,
 				633707DE1B6A49F40094A36C /* Products */,
+				EBC7EFE2EEEEE129F782E32C /* Pods */,
+				EE96FEE0D628128D5E48424E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +164,23 @@
 			name = BaseController;
 			sourceTree = "<group>";
 		};
+		EBC7EFE2EEEEE129F782E32C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F5A99351C4956CD0D74D14E /* Pods.debug.xcconfig */,
+				F7740C57FCE1BE42D9DB4B67 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE96FEE0D628128D5E48424E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D87CBC0042796D3D44B799B4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 633708001B6A49F50094A36C /* Build configuration list for PBXNativeTarget "cmall" */;
 			buildPhases = (
+				B01E1727BB88EB37278655FC /* Check Pods Manifest.lock */,
 				633707D91B6A49F40094A36C /* Sources */,
 				633707DA1B6A49F40094A36C /* Frameworks */,
 				633707DB1B6A49F40094A36C /* Resources */,
+				0E0CE8BA81CEF5B5499514C1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +277,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E0CE8BA81CEF5B5499514C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01E1727BB88EB37278655FC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		633707D91B6A49F40094A36C /* Sources */ = {
@@ -369,6 +428,7 @@
 		};
 		633708011B6A49F50094A36C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F5A99351C4956CD0D74D14E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cmall/Info.plist;
@@ -379,6 +439,7 @@
 		};
 		633708021B6A49F50094A36C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7740C57FCE1BE42D9DB4B67 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cmall/Info.plist;

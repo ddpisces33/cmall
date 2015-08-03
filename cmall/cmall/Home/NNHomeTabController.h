@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 NAONAO. All rights reserved.
 //
 
-#import "NNBaseTabBarController.h"
+#import <GGTabBarController.h>
 
-@interface NNHomeTabController : NNBaseTabBarController
+@interface NNHomeTabController : GGTabBarController
 
 @end

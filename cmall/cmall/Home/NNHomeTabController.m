@@ -10,6 +10,7 @@
 #import "NNHomeViewController.h"
 #import "NNCategoryViewController.h"
 #import "NNBaseNavigationController.h"
+#import "GGTabBarAppearanceKeys.h"
 
 @interface NNHomeTabController ()
 
@@ -17,14 +18,23 @@
 
 @implementation NNHomeTabController
 
+- (instancetype)init {
+    self = [super init];
+    
+    if(self) {
+        NNHomeViewController *homevc = [[NNHomeViewController alloc] init];
+        NNCategoryViewController *categoryvc = [[NNCategoryViewController alloc] init];
+        
+        self.viewControllers = @[homevc, categoryvc];
+        
+        self.tabBarAppearanceSettings = @{kTabBarAppearanceBackgroundColor : [UIColor lightGrayColor]};
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NNHomeViewController *homevc = [[NNHomeViewController alloc] init];
-    NNCategoryViewController *categoryvc = [[NNCategoryViewController alloc] init];
-    
-    self.viewControllers = @[homevc, categoryvc];
-    self.tabBar.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning {
