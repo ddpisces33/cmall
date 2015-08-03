@@ -17,12 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImage *image = [UIImage imageNamed:@"icon_01"];
+    UIImage *image = [UIImage imageNamed:@"icon_02"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    UIImage *image2 = [UIImage imageNamed:@"icon_01C"];
+    UIImage *image2 = [UIImage imageNamed:@"icon_02C"];
     image2 = [image2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UITabBarItem *barItem = [[UITabBarItem alloc] initWithTitle:@" " image:image selectedImage:image2];
+    
+    UITabBarItem *barItem = [[UITabBarItem alloc] initWithTitle:@"" image:image selectedImage:image2];
+    barItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
     self.tabBarItem = barItem;
     self.view.backgroundColor = [UIColor redColor];
 }

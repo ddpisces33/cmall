@@ -24,6 +24,7 @@
     NNCategoryViewController *categoryvc = [[NNCategoryViewController alloc] init];
     
     self.viewControllers = @[homevc, categoryvc];
+    self.tabBar.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning {
