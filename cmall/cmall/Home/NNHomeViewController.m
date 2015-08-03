@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.navigationController.navigationBarHidden = YES;
+    [self setTitle:@"首页"];
 }
 
 - (void)didReceiveMemoryWarning {
