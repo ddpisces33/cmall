@@ -10,4 +10,6 @@
 
 @interface NNBaseViewController : UIViewController
 
+- (UIView *)navigationBar;
+
 @end

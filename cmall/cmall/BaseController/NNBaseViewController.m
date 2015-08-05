@@ -10,6 +10,7 @@
 
 @interface NNBaseViewController () {
     UIImageView *imageV;
+    UIView *viewBar;
 }
 
 @end
@@ -32,14 +33,14 @@
     
     self.navigationController.navigationBarHidden = YES;
     
-    UIView *viewBar = [[UIView alloc] init];
-    imageV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"top"]];
+    viewBar = [[UIView alloc] init];
+    imageV  = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"top"]];
     
     if ([[[UIDevice currentDevice]systemVersion]floatValue] > 6.1)
     {
         viewBar.frame = CGRectMake(0, 0, self.view.frame.size.width, 40+20);
         
-    }else{
+    } else {
         viewBar.frame = CGRectMake(0, 0, self.view.frame.size.width, 44);
     }
     
@@ -58,14 +59,8 @@
     [imageV addSubview:titleLabel];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIView *)navigationBar {
+    return viewBar;
 }
-*/
 
 @end

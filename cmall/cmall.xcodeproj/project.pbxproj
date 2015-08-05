@@ -18,6 +18,8 @@
 		636A10311B6B471400D3E7CB /* NNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636A10301B6B471400D3E7CB /* NNHomeViewController.m */; };
 		636A10341B6B488400D3E7CB /* NNCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636A10331B6B488400D3E7CB /* NNCategoryViewController.m */; };
 		636A10CA1B6B6D8600D3E7CB /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636A10C91B6B6D8600D3E7CB /* Launch Screen.xib */; };
+		63AE71EF1B72120B00EB4474 /* NNScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AE71EE1B72120B00EB4474 /* NNScrollerView.m */; };
+		63AE71F81B72321F00EB4474 /* default_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AE71F71B72321F00EB4474 /* default_01@2x.png */; };
 		63BF5B501B6B20AF00C5A7B2 /* NNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BF5B4F1B6B20AF00C5A7B2 /* NNBaseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,9 @@
 		636A10321B6B488400D3E7CB /* NNCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNCategoryViewController.h; path = Home/NNCategoryViewController.h; sourceTree = "<group>"; };
 		636A10331B6B488400D3E7CB /* NNCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNCategoryViewController.m; path = Home/NNCategoryViewController.m; sourceTree = "<group>"; };
 		636A10C91B6B6D8600D3E7CB /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		63AE71ED1B72120B00EB4474 /* NNScrollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNScrollerView.h; path = Utility/NNScrollerView.h; sourceTree = "<group>"; };
+		63AE71EE1B72120B00EB4474 /* NNScrollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNScrollerView.m; path = Utility/NNScrollerView.m; sourceTree = "<group>"; };
+		63AE71F71B72321F00EB4474 /* default_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_01@2x.png"; sourceTree = "<group>"; };
 		63BF5B4E1B6B20AF00C5A7B2 /* NNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNBaseViewController.h; path = BaseController/NNBaseViewController.h; sourceTree = "<group>"; };
 		63BF5B4F1B6B20AF00C5A7B2 /* NNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNBaseViewController.m; path = BaseController/NNBaseViewController.m; sourceTree = "<group>"; };
 		D87CBC0042796D3D44B799B4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +106,7 @@
 		633707DF1B6A49F40094A36C /* cmall */ = {
 			isa = PBXGroup;
 			children = (
+				63DB780E1B71B5A600ABBB14 /* Utility */,
 				636A102B1B6B44EA00D3E7CB /* Home */,
 				638AA7D51B6A53D60043F853 /* BaseController */,
 				633707E41B6A49F40094A36C /* AppDelegate.h */,
@@ -115,6 +121,7 @@
 		633707E01B6A49F40094A36C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63AE71F51B72321F00EB4474 /* Resources */,
 				633707E11B6A49F40094A36C /* Info.plist */,
 				633707E21B6A49F40094A36C /* main.m */,
 			);
@@ -162,6 +169,31 @@
 				636A10291B6B27C100D3E7CB /* NNBaseTabBarController.m */,
 			);
 			name = BaseController;
+			sourceTree = "<group>";
+		};
+		63AE71F51B72321F00EB4474 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63AE71F61B72321F00EB4474 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63AE71F61B72321F00EB4474 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				63AE71F71B72321F00EB4474 /* default_01@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		63DB780E1B71B5A600ABBB14 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				63AE71ED1B72120B00EB4474 /* NNScrollerView.h */,
+				63AE71EE1B72120B00EB4474 /* NNScrollerView.m */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		EBC7EFE2EEEEE129F782E32C /* Pods */ = {
@@ -264,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AE71F81B72321F00EB4474 /* default_01@2x.png in Resources */,
 				636A10CA1B6B6D8600D3E7CB /* Launch Screen.xib in Resources */,
 				633707EE1B6A49F40094A36C /* Images.xcassets in Resources */,
 			);
@@ -318,6 +351,7 @@
 			files = (
 				636A102A1B6B27C100D3E7CB /* NNBaseTabBarController.m in Sources */,
 				636A10341B6B488400D3E7CB /* NNCategoryViewController.m in Sources */,
+				63AE71EF1B72120B00EB4474 /* NNScrollerView.m in Sources */,
 				633707E61B6A49F40094A36C /* AppDelegate.m in Sources */,
 				633707E31B6A49F40094A36C /* main.m in Sources */,
 				636A102E1B6B461F00D3E7CB /* NNHomeTabController.m in Sources */,
