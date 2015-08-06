@@ -12,7 +12,7 @@
 
 @optional
 
--(void)NNScrollerViewDidClicked:(NSUInteger)index;
+- (void)NNScrollerViewDidClicked:(NSUInteger)index;
 
 @end
 

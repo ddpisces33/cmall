@@ -7,7 +7,8 @@
 //
 
 #import "NNBaseViewController.h"
+#import "NNScrollerView.h"
 
-@interface NNHomeViewController : NNBaseViewController
+@interface NNHomeViewController : NNBaseViewController <NNScrollerViewDelegate>
 
 @end

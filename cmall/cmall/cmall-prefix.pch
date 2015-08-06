@@ -1,0 +1,12 @@
+//
+//  cmall-prefix.pch
+//  cmall
+//
+//  Created by ddpisces on 15/8/6.
+//  Copyright (c) 2015年 NAONAO. All rights reserved.
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <CocoaLumberjack/CocoaLumberjack.h>
+#endif
