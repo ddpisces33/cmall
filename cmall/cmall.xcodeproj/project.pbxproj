@@ -20,6 +20,7 @@
 		636A10CA1B6B6D8600D3E7CB /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636A10C91B6B6D8600D3E7CB /* Launch Screen.xib */; };
 		63AE71EF1B72120B00EB4474 /* NNScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AE71EE1B72120B00EB4474 /* NNScrollerView.m */; };
 		63AE71F81B72321F00EB4474 /* default_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AE71F71B72321F00EB4474 /* default_01@2x.png */; };
+		63AE71FF1B737E0800EB4474 /* NNProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AE71FE1B737E0800EB4474 /* NNProductListViewController.m */; };
 		63BF5B501B6B20AF00C5A7B2 /* NNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BF5B4F1B6B20AF00C5A7B2 /* NNBaseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		63AE71F71B72321F00EB4474 /* default_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_01@2x.png"; sourceTree = "<group>"; };
 		63AE71F91B73384400EB4474 /* NNUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNUtility.h; path = Utility/NNUtility.h; sourceTree = "<group>"; };
 		63AE71FB1B734AA500EB4474 /* cmall-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cmall-prefix.pch"; sourceTree = "<group>"; };
+		63AE71FD1B737E0800EB4474 /* NNProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNProductListViewController.h; path = Products/NNProductListViewController.h; sourceTree = "<group>"; };
+		63AE71FE1B737E0800EB4474 /* NNProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNProductListViewController.m; path = Products/NNProductListViewController.m; sourceTree = "<group>"; };
 		63BF5B4E1B6B20AF00C5A7B2 /* NNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNBaseViewController.h; path = BaseController/NNBaseViewController.h; sourceTree = "<group>"; };
 		63BF5B4F1B6B20AF00C5A7B2 /* NNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNBaseViewController.m; path = BaseController/NNBaseViewController.m; sourceTree = "<group>"; };
 		D87CBC0042796D3D44B799B4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +111,7 @@
 		633707DF1B6A49F40094A36C /* cmall */ = {
 			isa = PBXGroup;
 			children = (
+				63AE71FC1B737DB700EB4474 /* Products */,
 				63DB780E1B71B5A600ABBB14 /* Utility */,
 				636A102B1B6B44EA00D3E7CB /* Home */,
 				638AA7D51B6A53D60043F853 /* BaseController */,
@@ -188,6 +192,15 @@
 				63AE71F71B72321F00EB4474 /* default_01@2x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		63AE71FC1B737DB700EB4474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63AE71FD1B737E0800EB4474 /* NNProductListViewController.h */,
+				63AE71FE1B737E0800EB4474 /* NNProductListViewController.m */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		63DB780E1B71B5A600ABBB14 /* Utility */ = {
@@ -361,6 +374,7 @@
 				636A102E1B6B461F00D3E7CB /* NNHomeTabController.m in Sources */,
 				636A10311B6B471400D3E7CB /* NNHomeViewController.m in Sources */,
 				636A10271B6B242D00D3E7CB /* NNBaseNavigationController.m in Sources */,
+				63AE71FF1B737E0800EB4474 /* NNProductListViewController.m in Sources */,
 				63BF5B501B6B20AF00C5A7B2 /* NNBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

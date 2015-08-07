@@ -9,14 +9,11 @@
 #import "AppDelegate.h"
 #import "NNHomeTabController.h"
 #import "NNBaseViewController.h"
-#import "NNBaseNavigationController.h"
 #import "NNHomeViewController.h"
 #import "NNCategoryViewController.h"
 #import <GGTabBarController.h>
 
 @interface AppDelegate ()
-
-@property (strong,nonatomic) NNBaseNavigationController *navigationController;
 
 @end
 
@@ -32,7 +29,7 @@
     
     rootViewController = [[NNHomeTabController alloc] init];
     
-    self.navigationController = [[NNBaseNavigationController alloc] initWithRootViewController:rootViewController];
+    _navigationController = [[NNBaseNavigationController alloc] initWithRootViewController:rootViewController];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = _navigationController;
     self.window.backgroundColor = [UIColor whiteColor];

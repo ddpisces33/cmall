@@ -22,8 +22,8 @@
     self = [super init];
     
     if(self) {
-        NNHomeViewController *homevc = [[NNHomeViewController alloc] init];
-        NNCategoryViewController *categoryvc = [[NNCategoryViewController alloc] init];
+        NNHomeViewController *homevc = [NNHomeViewController new];
+        NNCategoryViewController *categoryvc = [NNCategoryViewController new];
         
         self.viewControllers = @[homevc, categoryvc];
         
@@ -43,15 +43,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

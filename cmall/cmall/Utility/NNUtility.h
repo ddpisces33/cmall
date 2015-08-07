@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#define NNApplicationSize       ((SYSTEM_VERSION >= 7) ? ([[UIScreen mainScreen] bounds].size):([[UIScreen mainScreen] applicationFrame].size)) //app 窗口大小
+#define NNApplicationSize       [[UIScreen mainScreen] bounds].size                  //app 窗口大小
+
+#define AppDelegateM            ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 // set LOG level
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;

@@ -6,10 +6,13 @@
 //  Copyright (c) 2015年 NAONAO. All rights reserved.
 //
 
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "NNHomeViewController.h"
 #import "UIButton+WebCache.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 #import "NNUtility.h"
+#import "NNProductListViewController.h"
+#import "AppDelegate.h"
+#import "NNCategoryViewController.h"
 
 @interface NNHomeViewController () {
     UIScrollView *scrollView;
@@ -86,11 +89,15 @@
 #pragma mark - Scroller View delegate
 
 - (void)NNScrollerViewDidClicked:(NSUInteger)index {
-    
 }
 
 - (void)btnNewProducts:(id)sender {
     DDLogVerbose(@"Button %ld", ((UIButton *)sender).tag);
+    
+//    NNHomeViewController *productList = [NNHomeViewController new];
+    
+    NNProductListViewController *productList = [NNProductListViewController new];
+    [AppDelegateM.navigationController pushViewController:productList animated:YES];
 }
 
 @end

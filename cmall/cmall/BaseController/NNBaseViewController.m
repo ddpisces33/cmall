@@ -22,6 +22,8 @@
     // Do any additional setup after loading the view.
     
     [self initNavigationBar];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
