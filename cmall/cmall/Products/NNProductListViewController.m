@@ -7,8 +7,6 @@
 //
 
 #import "NNProductListViewController.h"
-#import "NNUtility.h"
-#import "AppDelegate.h"
 
 @interface NNProductListViewController ()
 
@@ -19,30 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGSize size = NNApplicationSize;
-    
-    NSInteger height = self.navigationBar.frame.size.height;
-    NSInteger width  = self.navigationBar.frame.size.width;
+//    CGSize size = NNApplicationSize;
+//    
+//    NSInteger height = self.navigationBar.frame.size.height;
+//    NSInteger width  = self.navigationBar.frame.size.width;
 
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, height, width, size.height - height)];
-
-    [btn setTitle:@"this is a button" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(onButton:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:btn];
+    [self setTitle:@"商品列表"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)onButton:(id)sender {
-    DDLogVerbose(@"Button in Product");
-    
-    NNProductListViewController *productList = [NNProductListViewController new];
-    [AppDelegateM.navigationController pushViewController:productList animated:YES];
 }
 
 @end

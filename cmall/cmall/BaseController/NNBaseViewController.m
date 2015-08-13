@@ -7,6 +7,7 @@
 //
 
 #import "NNBaseViewController.h"
+#import "Masonry.h"
 
 @interface NNBaseViewController () {
     UIImageView *imageV;
@@ -38,27 +39,33 @@
     viewBar = [[UIView alloc] init];
     imageV  = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"top"]];
     
-    if ([[[UIDevice currentDevice]systemVersion]floatValue] > 6.1)
-    {
-        viewBar.frame = CGRectMake(0, 0, self.view.frame.size.width, 40+20);
-        
-    } else {
-        viewBar.frame = CGRectMake(0, 0, self.view.frame.size.width, 44);
-    }
-    
-    imageV.frame = viewBar.frame;
     [viewBar addSubview:imageV];
     [self.view addSubview:viewBar];
+    
+    [imageV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(viewBar);
+    }];
+    
+    [viewBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top);
+        make.left.equalTo(self.view);
+        make.right.equalTo(self.view);
+        make.height.equalTo(@60);
+    }];
 }
 
 - (void)setTitle:(NSString *)title {
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(65, imageV.frame.size.height - 44, imageV.frame.size.width - 130, 44)];
+    UILabel *titleLabel = [UILabel new];
     titleLabel.text = title;
     titleLabel.font = [UIFont boldSystemFontOfSize:20];
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.textAlignment = 1;
     [imageV addSubview:titleLabel];
+    
+    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(imageV);
+    }];
 }
 
 - (UIView *)navigationBar {
